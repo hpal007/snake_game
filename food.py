@@ -1,14 +1,15 @@
-from turtle import Turtle
+from turtle import Turtle, colormode
 import random
 
 
 class Food(Turtle):
+    colormode(255)
 
     def __init__(self):
         super().__init__()
         self.shape('circle')
-        self.color('yellow')
         self.penup()
+        self.color_generator()
         self.shapesize(stretch_wid=0.5, stretch_len=0.5)
         self.speed("fastest")
         self.refresh()
@@ -18,5 +19,6 @@ class Food(Turtle):
         random_y = random.randint(-280, 280)
         self.goto(random_x, random_y)
 
-
-
+    def color_generator(self):
+        rgb = [random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)]
+        self.color(tuple(rgb))
