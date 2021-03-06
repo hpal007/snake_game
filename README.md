@@ -3,6 +3,7 @@
 ## Python package used: PythonTurtle
 
 I wanted to make a classic snake game that we got to know for the first time on a Nokia 3310 mobile phone. I wanted to recreate that experience with python. 
+![image](https://user-images.githubusercontent.com/79990118/110202477-e9ecd400-7e8e-11eb-95b0-2934402e3c2d.png)
 
 ## Gameplay
 
